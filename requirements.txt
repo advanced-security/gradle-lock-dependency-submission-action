@@ -225,7 +225,7 @@ requests==2.34.2 \
     --hash=sha256:2a0d60c172f83ac6ab31e4554906c0f3b3588d37b5cb939b1c061f4907e278e0 \
     --hash=sha256:f288924cae4e29463698d6d60bc6a4da69c89185ad1e0bcc4104f584e960b9ed
     # via
-    #   -r /tmp/requirements_in.txt
+    #   -r requirements.in
     #   ghastoolkit
 semantic-version==2.10.0 \
     --hash=sha256:bdabb6d336998cbb378d4b9db3a4b56a1e3235701dc05ea2690d9a997ed5041c \
