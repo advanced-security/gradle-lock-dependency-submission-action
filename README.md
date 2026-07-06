@@ -14,6 +14,10 @@
 
 Gradle Lock Dependency Submission Action allows you to submit a gradle.lock file to the GitHub Dependency Graph.
 
+> [!WARNING]
+> This action is deprecated and no longer needed because GitHub dependency graph now supports Gradle lockfiles natively.
+> See the announcement: https://github.blog/changelog/2025-06-24-dependabot-support-for-gradle-lockfiles-is-now-generally-available/
+
 ## Usage
 
 ```yaml

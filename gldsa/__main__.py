@@ -12,6 +12,12 @@ from ghastoolkit.octokit.dependencygraph import (
 
 from gldsa import __name__ as tool_name, __version__
 
+DEPRECATION_MESSAGE = (
+    "DEPRECATED: This action is no longer needed because GitHub dependency graph "
+    "now supports Gradle lockfiles natively. See "
+    "https://github.blog/changelog/2025-06-24-dependabot-support-for-gradle-lockfiles-is-now-generally-available/"
+)
+
 parser = argparse.ArgumentParser(__name__)
 
 parser.add_argument("-g", "--gradle-lock", help="Gradle Lockfile")
@@ -86,6 +92,7 @@ def parseGradleLock(path: str) -> Dependencies:
 
 if __name__ == "__main__":
     arguments = parser.parse_args()
+    print(DEPRECATION_MESSAGE)
 
     if not arguments.github_repository:
         print("No GitHub Repository")
