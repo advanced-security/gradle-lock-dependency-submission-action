@@ -1,5 +1,5 @@
 name: 'gldsa'
-description: 'Gradle Lockfile Dependency Submission Action'
+description: 'DEPRECATED: Gradle lockfiles are now supported natively by the GitHub dependency graph'
 
 inputs:
   gradle-lock:
